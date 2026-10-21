@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How the Web Works | Home</title>
+  <meta name="description" content="A research site about web servers and web browsers, built for IT 3203.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ============ SITE HEADER / MAIN MENU ============ -->
+  <!-- This header + nav block is repeated identically on every page
+       so the menu stays consistent across the whole site. -->
+  <header id="site-header">
+    <h1>How the Web Works: Servers &amp; Browsers</h1>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html" class="active">Home</a>
+      <a href="web-servers.html">Web Servers</a>
+      <a href="web-browsers.html">Web Browsers</a>
+      <a href="key-concepts.html">Key Concepts</a>
+      <a href="references.html">References</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main class="page-wrap">
+
+    <!-- ============ HERO / ABSTRACT ============ -->
+    <section class="hero">
+      <h2>Project Abstract</h2>
+      <p>
+        Every time you load a web page, two very different programs quietly cooperate to make
+        it happen: a <strong>web browser</strong> running on your device, and a
+        <strong>web server</strong> running somewhere else on the internet. This site explores how
+        those two pieces work together &mdash; the request/response cycle, the protocols involved,
+        and the software that powers each side &mdash; using plain-language explanations, diagrams,
+        and a glossary of key terms.
+      </p>
+      <img src="images/hero-diagram.svg" alt="Diagram of a browser sending an HTTP request to a web server, and the server sending back an HTTP response">
+    </section>
+
+    <!-- ============ KEY TERMS ============ -->
+    <section>
+      <h2>Key Terms</h2>
+      <ul class="key-terms">
+        <li>Client&ndash;Server Model</li>
+        <li>HTTP / HTTPS</li>
+        <li>URL</li>
+        <li>DNS</li>
+        <li>Rendering Engine</li>
+        <li>Web Server Software</li>
+        <li>Request &amp; Response</li>
+      </ul>
+    </section>
+
+    <!-- ============ TABLE OF CONTENTS (grid layout) ============ -->
+    <section>
+      <h2>Table of Contents</h2>
+      <div class="grid">
+        <div class="card">
+          <h3><a href="web-servers.html">Web Servers</a></h3>
+          <p>What a web server is, the software that runs them, and how they handle incoming requests.</p>
+        </div>
+        <div class="card">
+          <h3><a href="web-browsers.html">Web Browsers</a></h3>
+          <p>How browsers turn HTML, CSS, and JavaScript into the pages you see and interact with.</p>
+        </div>
+        <div class="card">
+          <h3><a href="key-concepts.html">Key Concepts</a></h3>
+          <p>Seven core concepts &mdash; from DNS to caching &mdash; explained in plain language.</p>
+        </div>
+        <div class="card">
+          <h3><a href="references.html">References &amp; Resources</a></h3>
+          <p>Sources used for this project and recommended links for learning more.</p>
+        </div>
+        <div class="card">
+          <h3><a href="about.html">About</a></h3>
+          <p>A short introduction to me and to this project.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ SITE FOOTER ============ -->
+  <footer id="site-footer">
+    <p>This website was created as a class project for IT 3203 (Web Development).
+       Visit the <a href="https://ksuweb.github.io/IT3203/" target="_blank" rel="noopener">IT 3203 class website</a>.</p>
+  </footer>
+
+</body>
+</html>

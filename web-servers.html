@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Servers | How the Web Works</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header id="site-header">
+    <h1>How the Web Works: Servers &amp; Browsers</h1>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="web-servers.html" class="active">Web Servers</a>
+      <a href="web-browsers.html">Web Browsers</a>
+      <a href="key-concepts.html">Key Concepts</a>
+      <a href="references.html">References</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main class="page-wrap">
+    <h2>What Is a Web Server?</h2>
+    <img src="images/server-room.svg" alt="Illustration of a server rack with status lights">
+    <p>
+      A <strong>web server</strong> is both a piece of hardware and the software running on it that
+      stores, processes, and delivers web pages to clients. When a browser requests a page, the
+      web server software listens for that request, locates (or generates) the requested resource,
+      and sends it back using the <abbr title="Hypertext Transfer Protocol">HTTP</abbr> protocol.
+    </p>
+
+    <h2>Popular Web Server Software</h2>
+    <p>Most websites on the internet run on one of a small handful of server programs:</p>
+    <table>
+      <caption>Comparison of common web server software</caption>
+      <thead>
+        <tr>
+          <th>Server Software</th>
+          <th>Developer</th>
+          <th>Common Use Case</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Apache HTTP Server</td>
+          <td>Apache Software Foundation</td>
+          <td>General-purpose hosting, highly configurable via .htaccess</td>
+        </tr>
+        <tr>
+          <td>Nginx</td>
+          <td>Nginx, Inc. (F5)</td>
+          <td>High-traffic sites, reverse proxying, load balancing</td>
+        </tr>
+        <tr>
+          <td>Microsoft IIS</td>
+          <td>Microsoft</td>
+          <td>Windows Server environments, ASP.NET applications</td>
+        </tr>
+        <tr>
+          <td>Node.js (Express)</td>
+          <td>OpenJS Foundation</td>
+          <td>JavaScript-based dynamic applications and APIs</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>How a Server Handles a Request</h2>
+    <ol>
+      <li>The server receives an HTTP request on a port (usually 80 for HTTP or 443 for HTTPS).</li>
+      <li>It reads the request line and headers to determine what resource is being asked for.</li>
+      <li>For a <em>static</em> file (like an image or an HTML page), it reads the file from disk and returns it.</li>
+      <li>For a <em>dynamic</em> request, it may run server-side code (PHP, Python, Node.js, etc.) to
+          build the response, often by querying a database.</li>
+      <li>The server sends back an HTTP response with a status code (such as <code>200 OK</code> or
+          <code>404 Not Found</code>) plus the requested content.</li>
+    </ol>
+
+    <h2>Static vs. Dynamic Content</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Static Web Servers</h3>
+        <p>Return files exactly as they are stored on disk &mdash; no processing involved.
+           GitHub Pages, which hosts this very project, is a static web server.</p>
+      </div>
+      <div class="card">
+        <h3>Dynamic Web Servers</h3>
+        <p>Generate content on the fly using server-side scripts and databases, producing a
+           different response depending on the request (for example, a logged-in user's dashboard).</p>
+      </div>
+    </div>
+  </main>
+
+  <footer id="site-footer">
+    <p>This website was created as a class project for IT 3203 (Web Development).
+       Visit the <a href="https://ksuweb.github.io/IT3203/" target="_blank" rel="noopener">IT 3203 class website</a>.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Key Concepts | How the Web Works</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header id="site-header">
+    <h1>How the Web Works: Servers &amp; Browsers</h1>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="web-servers.html">Web Servers</a>
+      <a href="web-browsers.html">Web Browsers</a>
+      <a href="key-concepts.html" class="active">Key Concepts</a>
+      <a href="references.html">References</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main class="page-wrap">
+    <h2>Key Concepts</h2>
+    <p>Seven core ideas that tie web servers and web browsers together.</p>
+
+    <div class="grid">
+      <div class="card">
+        <h3><span class="concept-number">1</span>Client&ndash;Server Model</h3>
+        <p>A networking pattern where a <em>client</em> (the browser) requests resources and a
+           <em>server</em> provides them. The client initiates every exchange; the server only
+           responds.</p>
+      </div>
+
+      <div class="card">
+        <h3><span class="concept-number">2</span>HTTP / HTTPS</h3>
+        <p>HyperText Transfer Protocol is the set of rules browsers and servers use to communicate.
+           HTTPS adds TLS encryption so the data exchanged can't be read or tampered with in transit.</p>
+      </div>
+
+      <div class="card">
+        <h3><span class="concept-number">3</span>DNS (Domain Name System)</h3>
+        <p>The internet's "phone book." DNS translates human-readable domain names like
+           <code>example.com</code> into the numeric IP address a browser needs to reach a server.</p>
+      </div>
+
+      <div class="card">
+        <h3><span class="concept-number">4</span>URL (Uniform Resource Locator)</h3>
+        <p>The address of a specific resource on the web, made up of a scheme (http/https), a
+           domain name, an optional port, a path, and optional query parameters.</p>
+      </div>
+
+      <div class="card">
+        <h3><span class="concept-number">5</span>Rendering Engine</h3>
+        <p>The browser component that parses HTML and CSS and converts them into the visual layout
+           you see on screen, such as Blink, Gecko, or WebKit.</p>
+      </div>
+
+      <div class="card">
+        <h3><span class="concept-number">6</span>HTTP Status Codes</h3>
+        <p>Three-digit codes a server returns to summarize the result of a request &mdash;
+           <code>200</code> for success, <code>301</code> for redirect, <code>404</code> for not
+           found, <code>500</code> for a server error.</p>
+      </div>
+
+      <div class="card">
+        <h3><span class="concept-number">7</span>Caching</h3>
+        <p>Browsers and servers temporarily store copies of resources (images, stylesheets, pages)
+           so repeat visits load faster and put less load on the server.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer id="site-footer">
+    <p>This website was created as a class project for IT 3203 (Web Development).
+       Visit the <a href="https://ksuweb.github.io/IT3203/" target="_blank" rel="noopener">IT 3203 class website</a>.</p>
+  </footer>
+
+</body>
+</html>

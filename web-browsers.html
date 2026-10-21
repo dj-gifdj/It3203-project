@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Browsers | How the Web Works</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header id="site-header">
+    <h1>How the Web Works: Servers &amp; Browsers</h1>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="web-servers.html">Web Servers</a>
+      <a href="web-browsers.html" class="active">Web Browsers</a>
+      <a href="key-concepts.html">Key Concepts</a>
+      <a href="references.html">References</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main class="page-wrap">
+    <h2>What Is a Web Browser?</h2>
+    <img src="images/browser-window.svg" alt="Illustration of a browser window showing an address bar and a rendered page">
+    <p>
+      A <strong>web browser</strong> is client software that requests resources from web servers and
+      renders them for a human to read and interact with. The browser is responsible for turning raw
+      HTML, CSS, and JavaScript into the visual page you see on screen.
+    </p>
+
+    <h2>Major Browsers and Their Engines</h2>
+    <table>
+      <caption>Browsers and the rendering engines that power them</caption>
+      <thead>
+        <tr>
+          <th>Browser</th>
+          <th>Rendering Engine</th>
+          <th>Maker</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Google Chrome</td>
+          <td>Blink</td>
+          <td>Google</td>
+        </tr>
+        <tr>
+          <td>Microsoft Edge</td>
+          <td>Blink</td>
+          <td>Microsoft</td>
+        </tr>
+        <tr>
+          <td>Mozilla Firefox</td>
+          <td>Gecko</td>
+          <td>Mozilla</td>
+        </tr>
+        <tr>
+          <td>Apple Safari</td>
+          <td>WebKit</td>
+          <td>Apple</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>What Happens When You Load a Page</h2>
+    <ol>
+      <li>You type a URL or click a link, and the browser resolves the domain name via DNS.</li>
+      <li>The browser opens a connection to the web server and sends an HTTP(S) request.</li>
+      <li>The server responds with HTML, which the browser parses into the
+          <strong>DOM</strong> (Document Object Model).</li>
+      <li>Linked CSS files are parsed into the <strong>CSSOM</strong> and combined with the DOM to
+          figure out how each element should look and where it goes.</li>
+      <li>JavaScript runs, which can further change the page's content or behavior.</li>
+      <li>The browser paints pixels to the screen, and the page becomes visible and interactive.</li>
+    </ol>
+
+    <h2>Core Browser Components</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Rendering Engine</h3>
+        <p>Parses HTML/CSS and draws the page (e.g., Blink, Gecko, WebKit).</p>
+      </div>
+      <div class="card">
+        <h3>JavaScript Engine</h3>
+        <p>Executes JavaScript code (e.g., V8 in Chrome, SpiderMonkey in Firefox).</p>
+      </div>
+      <div class="card">
+        <h3>Networking</h3>
+        <p>Handles HTTP/HTTPS requests, caching, and cookies behind the scenes.</p>
+      </div>
+      <div class="card">
+        <h3>UI Shell</h3>
+        <p>The address bar, tabs, bookmarks, and other elements surrounding the page itself.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer id="site-footer">
+    <p>This website was created as a class project for IT 3203 (Web Development).
+       Visit the <a href="https://ksuweb.github.io/IT3203/" target="_blank" rel="noopener">IT 3203 class website</a>.</p>
+  </footer>
+
+</body>
+</html>
