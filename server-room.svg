@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 220" role="img" aria-labelledby="t d">
+  <title id="t">Server rack illustration</title>
+  <desc id="d">A simple illustration of a stacked server rack with status lights.</desc>
+  <rect width="500" height="220" fill="#eef3f6"/>
+  <g>
+    <rect x="150" y="20" width="200" height="180" rx="6" fill="#1b3a5c"/>
+    <!-- rack units -->
+    <g fill="#2a9d8f">
+      <rect x="165" y="35" width="170" height="24" rx="3"/>
+      <rect x="165" y="69" width="170" height="24" rx="3"/>
+      <rect x="165" y="103" width="170" height="24" rx="3"/>
+      <rect x="165" y="137" width="170" height="24" rx="3"/>
+      <rect x="165" y="171" width="170" height="14" rx="3"/>
+    </g>
+    <!-- status lights -->
+    <circle cx="320" cy="47" r="3.5" fill="#9ae6b4"/>
+    <circle cx="320" cy="81" r="3.5" fill="#f6ad55"/>
+    <circle cx="320" cy="115" r="3.5" fill="#9ae6b4"/>
+    <circle cx="320" cy="149" r="3.5" fill="#9ae6b4"/>
+  </g>
+</svg>
