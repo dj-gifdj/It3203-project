@@ -9,8 +9,6 @@
 </head>
 <body>
 
-  <!-- ============ SITE HEADER / MAIN MENU ============ -->
-  <!-- Identical header/nav block as the other pages, with "Quiz" marked active. -->
   <header id="site-header">
     <h1>How the Web Works: Servers &amp; Browsers</h1>
     <nav class="main-nav" aria-label="Main navigation">
@@ -34,16 +32,13 @@
       time runs out the quiz submits itself automatically, so keep an eye on the timer below.
     </p>
 
-    <!-- ============ TIMER BAR ============ -->
-    <!-- aria-live="polite" lets screen readers announce timer updates without being spammed every second. -->
+  
     <div class="quiz-timer-bar" id="quiz-timer-bar">
       <span class="quiz-timer-label">&#9201; Time Remaining:</span>
       <span class="quiz-timer-value" id="time-remaining" aria-live="polite">10:00</span>
     </div>
 
-    <!-- ============ RESULTS PANEL ============ -->
-    <!-- Hidden until the quiz is graded. JavaScript fills in every span below and toggles
-         the "pass"/"fail" class on this section for the color coding. -->
+   
     <section id="quiz-results" class="quiz-results" hidden aria-live="polite">
       <p class="quiz-results-flag" id="results-flag">&#8211;</p>
       <div class="quiz-results-grid">
@@ -63,12 +58,10 @@
       <p class="quiz-results-note" id="results-note"></p>
     </section>
 
-    <!-- ============ QUIZ FORM ============ -->
-    <!-- novalidate: we grade unanswered questions as incorrect ourselves instead of
-         letting the browser block submission, so a user can submit a partially-done quiz. -->
+  
     <form id="quiz-form" novalidate>
 
-      <!-- ---------- Q1: single choice ---------- -->
+    
       <fieldset class="quiz-question" id="field-q1" data-qnum="1">
         <legend><span class="q-number">Question 1</span> What does the acronym <strong>HTTP</strong> stand for?</legend>
         <div class="quiz-options">
@@ -80,7 +73,7 @@
         <p class="quiz-feedback" id="feedback-q1" hidden></p>
       </fieldset>
 
-      <!-- ---------- Q2: single choice ---------- -->
+    
       <fieldset class="quiz-question" id="field-q2" data-qnum="2">
         <legend><span class="q-number">Question 2</span> Which rendering engine powers Mozilla Firefox?</legend>
         <div class="quiz-options">
@@ -92,7 +85,7 @@
         <p class="quiz-feedback" id="feedback-q2" hidden></p>
       </fieldset>
 
-      <!-- ---------- Q3: single choice ---------- -->
+      
       <fieldset class="quiz-question" id="field-q3" data-qnum="3">
         <legend><span class="q-number">Question 3</span> What is the main job of DNS?</legend>
         <div class="quiz-options">
@@ -104,7 +97,6 @@
         <p class="quiz-feedback" id="feedback-q3" hidden></p>
       </fieldset>
 
-      <!-- ---------- Q4: single choice ---------- -->
       <fieldset class="quiz-question" id="field-q4" data-qnum="4">
         <legend><span class="q-number">Question 4</span> Which HTTP status code means the requested resource could not be found?</legend>
         <div class="quiz-options">
@@ -116,7 +108,7 @@
         <p class="quiz-feedback" id="feedback-q4" hidden></p>
       </fieldset>
 
-      <!-- ---------- Q5: single choice ---------- -->
+      
       <fieldset class="quiz-question" id="field-q5" data-qnum="5">
         <legend><span class="q-number">Question 5</span> What does a browser build from parsed HTML to represent the structure of a page?</legend>
         <div class="quiz-options">
@@ -128,7 +120,7 @@
         <p class="quiz-feedback" id="feedback-q5" hidden></p>
       </fieldset>
 
-      <!-- ---------- Q6: fill-in-the-blank ---------- -->
+     
       <fieldset class="quiz-question" id="field-q6" data-qnum="6">
         <legend><span class="q-number">Question 6</span> Fill in the blank: the <strong>&#8195;&#8195;&#8195;&#8195;</strong> model describes a browser requesting resources and a server providing them.</legend>
         <label class="quiz-fill-label" for="q6-input">Your answer:</label>
@@ -136,7 +128,7 @@
         <p class="quiz-feedback" id="feedback-q6" hidden></p>
       </fieldset>
 
-      <!-- ---------- Q7: fill-in-the-blank ---------- -->
+     
       <fieldset class="quiz-question" id="field-q7" data-qnum="7">
         <legend><span class="q-number">Question 7</span> Fill in the blank: secure web traffic (HTTPS) normally travels over port <strong>&#8195;&#8195;&#8195;&#8195;</strong>.</legend>
         <label class="quiz-fill-label" for="q7-input">Your answer:</label>
@@ -144,7 +136,7 @@
         <p class="quiz-feedback" id="feedback-q7" hidden></p>
       </fieldset>
 
-      <!-- ---------- Q8: fill-in-the-blank ---------- -->
+     
       <fieldset class="quiz-question" id="field-q8" data-qnum="8">
         <legend><span class="q-number">Question 8</span> Fill in the blank: GitHub Pages is an example of a <strong>&#8195;&#8195;&#8195;&#8195;</strong> web server, because it returns files exactly as stored on disk.</legend>
         <label class="quiz-fill-label" for="q8-input">Your answer:</label>
@@ -152,7 +144,7 @@
         <p class="quiz-feedback" id="feedback-q8" hidden></p>
       </fieldset>
 
-      <!-- ---------- Q9: multi-select (checkboxes) ---------- -->
+      
       <fieldset class="quiz-question" id="field-q9" data-qnum="9">
         <legend><span class="q-number">Question 9</span> Which of the following are popular <em>web server software</em>? <span class="quiz-hint">(select all that apply)</span></legend>
         <div class="quiz-options">
@@ -165,7 +157,7 @@
         <p class="quiz-feedback" id="feedback-q9" hidden></p>
       </fieldset>
 
-      <!-- ---------- Q10: multi-select (checkboxes) ---------- -->
+      
       <fieldset class="quiz-question" id="field-q10" data-qnum="10">
         <legend><span class="q-number">Question 10</span> Which of the following are core components found inside a web browser? <span class="quiz-hint">(select all that apply)</span></legend>
         <div class="quiz-options">
@@ -177,7 +169,7 @@
         <p class="quiz-feedback" id="feedback-q10" hidden></p>
       </fieldset>
 
-      <!-- ---------- Actions ---------- -->
+     
       <div class="quiz-actions">
         <button type="submit" id="submit-quiz-btn" class="btn btn-primary">Submit Quiz</button>
         <button type="button" id="reset-quiz-btn" class="btn btn-secondary">Retake / Reset Quiz</button>
@@ -186,7 +178,7 @@
 
   </main>
 
-  <!-- ============ SITE FOOTER ============ -->
+  
   <footer id="site-footer">
     <p>This website was created as a class project for IT 3203 (Web Development).
        Visit the <a href="https://ksuweb.github.io/IT3203/" target="_blank" rel="noopener">IT 3203 class website</a>.</p>
